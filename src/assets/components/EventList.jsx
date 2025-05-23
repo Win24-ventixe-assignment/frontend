@@ -28,4 +28,4 @@ useEffect(() => {
   )
 }
 
-export default Events
+export default EventList

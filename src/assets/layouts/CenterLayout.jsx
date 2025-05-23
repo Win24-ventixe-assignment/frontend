@@ -1,7 +1,7 @@
 import React from 'react'
  const CenterLayout = () => {
   return (
-    <div cassName= "center-wrapper">
+    <div className= "center-wrapper">
       <main>
         <Outlet />
       </main>

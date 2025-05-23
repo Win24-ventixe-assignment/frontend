@@ -8,7 +8,7 @@ import EventList from '../components/EventList'
 
  const PortalLayout = () => {
   return (
-    <div cassName= "portal-wrapper">
+    <div className= "portal-wrapper">
       <Nav />
       <Header />
       <main>
