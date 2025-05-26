@@ -156,10 +156,6 @@ header {
   gap: 1rem; 
 }
 
-.user-avatar {
-  
-}
-
 main {
   grid-area: main;
   background-color: var(--white-200);
@@ -184,19 +180,21 @@ footer {
     background-color: var(--clr-grey-20);
     padding: 1rem; 
     border-radius: 16px;
-    gap: .2rem;
+    gap: 2rem;
 
     @media (min-width: 768px) {
         max-height: 3rem;
         grid-area: footer; 
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: left;
     }
 }
 
 .footer-text {
     font-size: 12px;
+    font-weight: bold;
     color: var(--cool-gray-700);
+    
 }
 
 .links-container {
@@ -210,5 +208,58 @@ footer {
 }
 
 .footer-link {
+    font-size: 12px;
     color: var(--cool-gray-500);
+    padding-bottom: 1rem;
+    text-decoration: none;
+
 }
+ /*event card*/
+
+        .event-card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+            height: 276px;
+            width: 350px;
+            background: var(--surface-color);
+            border-radius: 16px;
+            box-shadow: 0 4px 5px 2px rgba(148, 148, 148, 0.1);
+            padding: 20px; 
+        }
+        
+        .card-header{
+            position: relative;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas: "img name action" "img client na";
+            align-items: center;
+            column-gap: 1rem;
+            grid-row: 1;
+            grid-column: span 3;
+
+            .card-image {
+           
+                grid-area: img;
+                width: 56px;
+                height: 56px;
+                overflow: hidden;
+                border-radius: 16px;
+    
+                img {
+                    width: 56px;
+                    height: 56px;
+                    object-fit: contain;  
+                }
+            }
+
+        }
+
+        .card-body {
+            grid-row: 2;
+            grid-column: span 3;
+        }
+
+ 

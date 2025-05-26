@@ -10,7 +10,7 @@ const Nav = () => {
       </div>
         <div className="nav-links">
           <a className="nav-link" href="#">
-            <i className="fa-solid fa-ticket"></i>
+            <i class="bi bi-ticket"></i>
             <span>Events</span>
           </a>
         
