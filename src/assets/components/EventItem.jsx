@@ -1,5 +1,8 @@
-/*import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+
+
+
 
 const EventItem = ({ item }) => {
   return (
@@ -9,9 +12,9 @@ const EventItem = ({ item }) => {
           <div className="card-image">
             <img src="/images/eventimage1.jpg" alt={`Image for ${item.title}`} />
           </div>
-          <h2>{item.title}</h2>
         </div>
         <div className="card-body">
+          <h2>{item.id}</h2>
           <p>{item.date ? item.date : 'Date coming soon'}</p>
         </div>
       </div>
@@ -19,25 +22,25 @@ const EventItem = ({ item }) => {
   );
 };
 
-export default EventItem;*/
-import React from 'react';
+export default EventItem;
 
-const EventItem = () => {
+
+// const EventItem = () => {
   
 
-  return (
-    <div className="event-card">
-      <div className="card-header">
-        <div className="card-image">
-          <img src="/images/pexels-joshsorenson-154147.jpg" alt="eventimage" />
-        </div>
-        <h2>KONSERT</h2>
-      </div>
-      <div className="card-body">
-        <p>konsert i göteborg</p>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="event-card">
+//       <div className="card-header">
+//         <div className="card-image">
+//           <img src="/images/pexels-joshsorenson-154147.jpg" alt="eventimage" />
+//         </div>
+//         <h2>KONSERT</h2>
+//       </div>
+//       <div className="card-body">
+//         <p>konsert i göteborg</p>
+//       </div>
+//     </div>
+//   );
+// };
 
-export default EventItem;
+// export default EventItem;
