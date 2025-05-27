@@ -24,16 +24,14 @@ console.log(events)
 
 
   return (
-    <section id="events"> 
-    {
-      events.map(event => ( <EventItem key={event.id} item={event} />))
-      
-    }
-
-    
-    
+    <section id="events">
+      <div className="card-container">
+        {events.map((event) => (
+          <EventItem key={event.id} item={event} />
+        ))}
+      </div>
     </section>
-  )
+  );
 }
 
 export default EventList

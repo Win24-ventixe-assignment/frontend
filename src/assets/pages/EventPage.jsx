@@ -9,7 +9,7 @@ import EventList from '../components/EventList'
      <>
        
        <EventList />
-
+      
   
      </>
    )
