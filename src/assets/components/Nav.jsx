@@ -1,23 +1,24 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = () => { 
   return (
     <nav>
       <div className="nav-logo">
-      <a className="ventixe-logotype" href="#">
-        <img src="/images/ventrixe-icon.svg" alt="Ventixe logotype" /></a>
+        <Link className="ventixe-logotype" to="/">
+          <img src="/images/ventrixe-icon.svg" alt="Ventixe logotype" />
+        </Link>
         <h4>Ventixe</h4>
       </div>
-        <div className="nav-links">
-          <a className="nav-link" href="#">
-            <i className="bi bi-ticket"></i>
-            <span>Events</span>
-          </a>
-        
+      <div className="nav-links">
+        <Link className="nav-link" to="/">
+          <i className="bi bi-ticket"></i>
+          <span>Events</span>
+        </Link>
       </div>
     </nav>
   );
 };
 
 export default Nav;
+
 

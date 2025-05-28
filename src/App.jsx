@@ -17,7 +17,7 @@ function App() {
         <Route path='/' element={<PortalLayout />}>
           <Route index element={<EventPage />} />
           <Route path="/events/:id" element={<EventDetailsPage />} />
-          <Route path="/booking" element={<BookingEventPage />} />
+          <Route path="/events/booking/:id" element={<BookingEventPage />} />
           <Route path='*' element={<div>Not found</div>} />
         </Route>
         
