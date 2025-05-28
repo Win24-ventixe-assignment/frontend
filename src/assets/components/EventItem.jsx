@@ -46,7 +46,7 @@ export default EventItem; */
  };
 
  export default EventItem;*/
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const EventItem = ({ item }) => {
@@ -62,8 +62,8 @@ const EventItem = ({ item }) => {
           </div>
         </div>
         <div className="card-body">
-          <h6>{item.title || 'KONSERT'}</h6>
-          <p>{item.location || 'konsert i göteborg'}</p>
+          <h6>{item.title}</h6>
+          <p>{item.location}</p>
         </div>
       </div>
     </Link>

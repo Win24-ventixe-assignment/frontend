@@ -65,7 +65,7 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className="booking-form">
       <h1>Book Event - {event.title}</h1>
       
         <form onSubmit={handleSubmit} noValidate>

@@ -313,3 +313,52 @@ footer {
   color: inherit;
   display: block; 
 }
+
+/* event details*/
+
+.event-details {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  
+}
+
+.event-details h1 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.event-details p {
+  font-size: 12px;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.event-details img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.event-details a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.event-details a:hover {
+  background-color: var(--primary-300);
+}
