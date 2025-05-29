@@ -44,7 +44,7 @@ const EventDetailsPage = () => {
       <p>{event.description}</p>
       <p>Plats: {event.location}</p>
       <p>Datum: {formatDateTime(event.date)}</p>
-      <Link to={`/events/booking/${id}`}>Boka detta evenemang</Link>
+      <Link to={`/events/booking/${id}`}>Reserve tickets for this event</Link>
     </div>
   )
 }
