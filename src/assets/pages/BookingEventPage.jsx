@@ -24,7 +24,7 @@ const BookingEventPage = () => {
 
   const getEvent = async () => {
     try {
-      const res = await fetch(`https://localhost:7265/api/events/${id}`)
+      const res = await fetch(`https://eventprovider-ventixe-d3eah8behdb4gpe3.swedencentral-01.azurewebsites.net/api/events/${id}`)
       if (!res.ok) throw new Error("Failed to fetch event")
 
       const data = await res.json()
@@ -42,8 +42,9 @@ const BookingEventPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    try {
-      const res = await fetch(`https://localhost:7265/api/bookings`, {
+
+       try {
+      const res = await fetch(`https://bookingprovider-ventixe-d3csdgdrgjfjabee.swedencentral-01.azurewebsites.net/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -51,11 +52,11 @@ const BookingEventPage = () => {
 
       if (!res.ok) {
   const errorData = await res.json()
-  console.error("Booking failed", errorData)
+  console.error("Reservation failed", errorData)
   setSuccessMessage('Something went wrong. Please try again.')
 
       } else {
-        setSuccessMessage('Your booking was successful!')
+        setSuccessMessage('Your reservation was successful!')
         
       }
     } catch (err) {

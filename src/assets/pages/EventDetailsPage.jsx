@@ -19,7 +19,7 @@ const EventDetailsPage = () => {
   }
 
   const getEvent = async () => {
-    const res = await fetch(`https://localhost:7265/api/events/${id}`)
+    const res = await fetch(`https://eventprovider-ventixe-d3eah8behdb4gpe3.swedencentral-01.azurewebsites.net/api/events/${id}`)
 
     if (res.ok) {
       const response = await res.json()
@@ -45,8 +45,11 @@ const EventDetailsPage = () => {
       <p>Plats: {event.location}</p>
       <p>Datum: {formatDateTime(event.date)}</p>
       <Link to={`/events/booking/${id}`}>Reserve tickets for this event</Link>
+      
     </div>
+    
   )
+  
 }
 
 export default EventDetailsPage

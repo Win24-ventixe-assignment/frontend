@@ -5,7 +5,7 @@ const EventList = () => {
 const [events, setEvents] = useState([])
 
 const getEvents = async () => {
-  const res = await fetch("https://localhost:7265/api/events")
+  const res = await fetch("https://eventprovider-ventixe-d3eah8behdb4gpe3.swedencentral-01.azurewebsites.net/api/events")
 
   if (res.ok) {
     const response = await res.json()
