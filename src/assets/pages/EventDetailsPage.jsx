@@ -34,7 +34,7 @@ const EventDetailsPage = () => {
   }, [id])
 
   if (!event) {
-    return <p>Laddar evenemangsdetaljer...</p>/* Chat GPT recommended using this code*/
+    return <p>Loading eventdetails...</p>/* Chat GPT recommended using this code*/
   }
 
   return (
