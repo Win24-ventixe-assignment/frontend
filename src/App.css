@@ -271,7 +271,7 @@ footer {
 }
         .event-card {
         
-            background: var(--surface-color);
+            background: #fff;
             border-radius: 16px;
             padding: 12px;
             box-shadow: 0 4px 5px 2px rgba(148, 148, 148, 0.1);
